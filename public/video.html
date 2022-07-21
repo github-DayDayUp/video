@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./scripts.js"></script>
+    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-confirm/3.3.4/jquery-confirm.min.css">
+    <style type="text/css">
+        html, table {
+            font-size: 15px;
+        }
+        .content {
+            border: 1px solid #cccccc;
+            height: 600px;
+            box-shadow: 1px 1px 8px #e0e0e0;
+            margin-top: 20px;
+        }
+        img{
+            width: 100%;
+            height: 620px;
+        }
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+        #player{
+
+        }
+
+    </style>
+    <script  type="text/javascript" >
+        function ggyy() {
+            var code = ["<html>"];
+            code.push("<body>");
+            code.push("<img src='./bkg.jpg' width='100%' height='620'/>");
+            code.push("</body>");
+            code.push("</html>");
+            return code.join("");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        将视频网站链接（例如：爱奇艺、腾讯视频、优酷、土豆、芒果TV等，支持解析M3U8链接）粘贴到视频地址输入框之后点击播放按钮即可。
+        </div>
+        <form method="post" id="khname">
+        <div class="input-group mb-3">
+        <div class="input-group-prepend">
+        <select id="jk" class="custom-select">
+        <option rel="nofollow" value="https://jx.bozrc.com:4433/player/?url=">Parwix解析接口</option>
+        <option rel="nofollow" value="https://www.mtosz.com/m3u8.php?url=">Mao解析接口</option>
+        <option rel="nofollow" value="https://vip.bljiex.com/?v=">BL解析接口</option>
+        <option rel="nofollow" value="https://z1.m1907.cn/?jx=">1907解析接口</option>
+        <option rel="nofollow" value="https://www.administratorw.com/video.php?url=">无名小站接口</option>
+        <option rel="nofollow" value="http://17kyun.com/api.php?url=">17kyun解析接口</option>
+        <option rel="nofollow" value="https://vip.66parse.club/?url=">200解析接口</option>
+        <option rel="nofollow" value="http://jx.rdhk.net/?v=">HK解析接口</option>
+        <option rel="nofollow" value="https://www.8090g.cn/?url=">8090解析接口</option>
+        <option rel="nofollow" value="https://www.8090g.cn/jiexi/?url=">8090备用接口</option>
+        <option rel="nofollow" value="http://www.1717yun.com/jx/vip/index.php?url=">1717解析接口</option>
+        <option rel="nofollow" value="https://www.ckmov.vip/api.php?url=">ckmov解析接口</option>
+        <option rel="nofollow" value="http://jx.yparse.com/?url=">步步高解析接口</option>
+        <option rel="nofollow" value="https://jx.m3u8.tv/jiexi/?url=">无广告解析接口</option>
+        <option rel="nofollow" value="https://www.kpezp.cn/jlexi.php?url=">小蒋解析接口</option>
+        <option rel="nofollow" value="https://www.xymav.com/?url=">七七解析接口</option>
+        <option rel="nofollow" value="https://2.08bk.com/?url=">小七解析接口</option>
+        <option rel="nofollow" value="https://okjx.cc/?url=">OK解析接口</option>
+        <option rel="nofollow" value="https://api.v6.chat/?url=">音萌解析接口</option>
+        </select>
+        </div>
+        <input id="url" type="text" class="form-control" placeholder="在此输入视频地址">
+        <div class="input-group-append">
+        <button id="bf" type="button" onclick="redirect()" class="btn btn-primary">立即播放</button>
+        </div>
+        </div>
+        </form>
+        <div class="content">
+        <iframe src='javascript:parent.ggyy();' id="player" width="100%" height="600" scrolling="no" allowfullscreen="true" allowtransparency="true" marginheight="0" marginwidth="0" frameborder="0">
+        </iframe>
+        </div>
+        </div>
+</body>
+</html>
