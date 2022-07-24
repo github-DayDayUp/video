@@ -1,0 +1,7 @@
+{
+  "name": "video一键",
+  "description": "一键部署视频解析",
+  "repository": "https://github.com/github-DayDayUp/video",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static"]
+}
